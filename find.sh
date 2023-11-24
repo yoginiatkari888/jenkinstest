@@ -2,7 +2,7 @@
 
 # Remote server details
 remote_user="root"
-remote_host="localhost"
+remote_host="192.168.51.99"
 remote_folder="/root/yogii"
 
 # Local folder
