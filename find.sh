@@ -9,7 +9,7 @@ remote_folder="/root/yogii"
 local_folder="/root/yogii_backup"
 
 # Use diff to find differences
-diff_output=$(ssh "${remote_user}@${remote_host}" "diff  -rqb '${remote_folder}/' '${local_folder}/'")
+diff_output=$(ssh "${remote_user}@${remote_host}" "diff --exclude-from=/home/yogini/Downloads/jenkins/jenkinstest/backup/ -rqb '${remote_folder}/' '${local_folder}/'")
 
 # Check the output of diff
 if [ -z "$diff_output" ]; then
